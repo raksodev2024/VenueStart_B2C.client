@@ -1,0 +1,14 @@
+#navbarNav ul li a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--primary);
+    position:sticky;
+}
+
+#navbarNav ul .btn-outline-custom:hover{
+    background-color: var(--primary);
+
+}
+#navbarNav ul .btn-outline-custom:hover a {
+    color: #fff !important;
+}
