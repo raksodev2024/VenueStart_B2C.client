@@ -1,0 +1,21 @@
+.venue-title {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-top: 0.25rem;
+}
+
+.venue-subtitle {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.card-full {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 577px) {
+  .card-full {
+    max-width: 100% !important;
+  }
+}

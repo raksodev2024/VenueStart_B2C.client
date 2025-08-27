@@ -1,0 +1,17 @@
+.homepageTitle {
+    font-family: Montserrat, sans-serif !important;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.homepageTitleItalize {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 2.5rem;
+}
+
+.slider-container {
+    min-width: "327px";
+}
+

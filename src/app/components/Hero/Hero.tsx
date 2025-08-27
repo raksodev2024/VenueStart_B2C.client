@@ -25,13 +25,13 @@ const Hero = ({ title, subtitle, image, children }: HeroProps) => {
         />
       )}
 
-      <div className="position-absolute top-50 start-50 translate-middle bg-white">
-        
-        <div>
-          <h1>The Righ Venue for</h1>
-        </div>
-        <div>
-          <h1><span>Every Moment</span> - Simply Yours</h1>
+      <div className="position-absolute" style={{top: "35%", left: "10%", transform: "translateY(-35%)", maxWidth: "100%", }}>
+        <div className="custom-heading" style={{ wordWrap: "normal" }}>
+          <h1 className="fw-bold text-white font-serif display-2">The Right Venue for</h1>
+          <h1 className="offset-line fw-bold fs-4 fs-md-2">
+            <span className="text-gold font-serif d-block display-4">Every Moment</span>
+            <span className="text-white font-serif d-block text-end display-6">— Simply Yours</span>
+          </h1>
         </div>
       </div>
       {children}

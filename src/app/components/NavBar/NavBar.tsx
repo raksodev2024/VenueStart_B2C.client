@@ -38,7 +38,7 @@ const Navbar = () => {
 
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav ms-auto d-flex gap-2">
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                             <Link className={`nav-link`} href="#">
                                 Location
                             </Link>
@@ -52,11 +52,17 @@ const Navbar = () => {
                             <Link className={`nav-link`} href="/contact">
                                 Contact
                             </Link>
-                        </li>
-                        <li className="btn btn-outline-custom rounded-pill d-flex align-items-center fw-bold">
+                        </li> */}
+                        <li className="btn d-flex align-items-center fw-bold">
                             <Link href="">
                                 <i className="bis bi-plus-square"></i>&nbsp;
                                 LIST YOUR VENUE
+                            </Link>
+                        </li>
+                        <li className="btn btn-outline-custom d-flex align-items-center fw-bold">
+                            <Link href="">
+                                <i className="bis bi-plus-square"></i>&nbsp;
+                                Sign In / Sign Up
                             </Link>
                         </li>
                     </ul>

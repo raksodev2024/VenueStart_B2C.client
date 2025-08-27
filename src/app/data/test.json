@@ -1,0 +1,53 @@
+[
+    {
+        "venue": "Okada Manla",
+        "subVenue": "Cove Manila",
+        "address": "Parañaque City",
+        "imgLocation": "https://cdn.roovook.com/host/host_thumbnail/1080/86_20230331_054459.webp",
+        "rating": 5
+    },
+    {
+        "venue": "City of Dreams Manila",
+        "subVenue": "Grand Ballroom",
+        "address": "Parañaque City",
+        "imgLocation": "https://cdn.roovook.com/host/host_thumbnail/1080/91_20240319_062013.webp",
+        "rating": 5
+    },
+    {
+        "venue": "Hilton Manila",
+        "subVenue": "Hilton Ballroom",
+        "address": "Parañaque City",
+        "imgLocation": "https://cdn.roovook.com/host/host_thumbnail/1080/118_20250403_060838.webp",
+        "rating": 5
+    },
+    {
+        "venue": "The Lind Hotels",
+        "subVenue": "Infinity Event Space",
+        "address": "Boracay",
+        "imgLocation": "https://cdn.roovook.com/host/host_thumbnail/1080/154_20230331_052540.webp",
+        "rating": 5
+    },
+    {
+        "venue": "Makati Shangri-La",
+        "subVenue": "Isabela Ballroom",
+        "address": "Makati City",
+        "imgLocation": "https://cdn.roovook.com/host/host_thumbnail/1080/308_20250108_073324.webp",
+        "rating": 5
+    },
+    {
+        "venue": "Seda Hotel Manila Bay",
+        "subVenue": "Sampaguita Ballroom",
+        "address": "Parañaque City",
+        "imgLocation": "https://cdn.roovook.com/host/host_thumbnail/1080/316_20250313_065914.webp",
+        "rating": 5
+    },
+    {
+        "venue": "Okada Manla",
+        "subVenue": "Grand Ballroom",
+        "address": "Parañaque City",
+        "imgLocation": "https://cdn.roovook.com/host/host_thumbnail/1080/317_20250318_080336.webp",
+        "rating": 5
+    }
+]
+
+

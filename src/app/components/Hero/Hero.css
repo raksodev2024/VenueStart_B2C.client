@@ -4,3 +4,16 @@
   /* overflow: hidden; */
 }
 
+.custom-heading {
+  position: relative;
+}
+
+.offset-line {
+  margin-left: 10ch;
+}
+.text-gold{
+  color: #FFD700;
+}
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
