@@ -1,0 +1,11 @@
+.map-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+#interactiveMap{
+  margin-left: 20px;
+  position: sticky;
+}

@@ -1,11 +1,12 @@
-import CardsSlider from "./components/CardSlider/CardSlider";
-import Hero from "./components/Hero/Hero";
-import Image from "next/image"
-import { getVenues } from "./actions/home/getVenues";
-import { getpartners } from "./actions/home/getPartners";
+import CardsSlider from "../components/CardSlider/CardSlider";
+import Hero from "../components/Hero/Hero";
+import Image from "next/image";
+import Link from "next/link";
+import { getVenues } from "../actions/home/getVenues";
+import { getpartners } from "../actions/home/getPartners";
 import styles from "./page.module.css";
 
-export default async function Home() {
+export default async function Home(){
   const cards = await getVenues();
   const partners = await getpartners();
   return (
@@ -27,9 +28,9 @@ export default async function Home() {
                       <label className="form-label fw-bold small mb-1">Guests</label>
                       <input type="text" className="form-control border-0 p-0 shadow-none" placeholder="Add guests"></input>
                   </div>
-                  <a href="/Search/Index" className="btn btn-success ms-3 d-flex align-items-center justify-content-center">
+                  <Link href="/search" className="btn btn-success ms-3 d-flex align-items-center justify-content-center">
                       <i className="bi bi-search text-white"></i>
-                  </a>
+                  </Link>
               </div>
             </div>
           }

@@ -6,11 +6,10 @@ import Image from "next/image"
 
 interface HeroProps {
   title: string;
-  subtitle?: string;
   image?: string; // optional image path
   children?: ReactNode; // fallback to children (custom content)
 }
-const Hero = ({ title, subtitle, image, children }: HeroProps) => {
+const Hero = ({ title, image, children }: HeroProps) => {
   return (
     <section className="position-relative" id="hero">
      
