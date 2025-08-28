@@ -1,10 +1,12 @@
-import CardsSlider from "./components/CardSlider/CardSlider";
-import Hero from "./components/Hero/Hero";
-import { getVenues } from "./actions/home/getVenues";
-import { getpartners } from "./actions/home/getPartners";
+import CardsSlider from "../components/CardSlider/CardSlider";
+import Hero from "../components/Hero/Hero";
+import Image from "next/image";
+import Link from "next/link";
+import { getVenues } from "../actions/home/getVenues";
+import { getpartners } from "../actions/home/getPartners";
 import styles from "./page.module.css";
 
-export default async function Home() {
+export default async function Home(){
   const cards = await getVenues();
   const partners = await getpartners();
   return (
@@ -26,9 +28,9 @@ export default async function Home() {
                       <label className="form-label fw-bold small mb-1">Guests</label>
                       <input type="text" className="form-control border-0 p-0 shadow-none" placeholder="Add guests"></input>
                   </div>
-                  <a href="/Search/Index" className="btn btn-success ms-3 d-flex align-items-center justify-content-center">
+                  <Link href="/search" className="btn btn-success ms-3 d-flex align-items-center justify-content-center">
                       <i className="bi bi-search text-white"></i>
-                  </a>
+                  </Link>
               </div>
             </div>
           }
@@ -51,7 +53,9 @@ export default async function Home() {
             <div className="row align-items-center">
               <div className="col-md-6 mb-3 mb-md-0">
                 <div className="position-relative">
-                  <img src="/ThirdSectionBanner.jpg" className="img-fluid rounded w-100" alt="Sample 1"/>
+                  <Image src="/ThirdSectionBanner.jpg" className="img-fluid rounded w-100" alt="Sample 1" 
+                    width={100}
+                    height={100}/>
                 </div>
               </div>
               <div className="col-md-6 bg-white p-4">
@@ -70,11 +74,13 @@ export default async function Home() {
             <div className="row align-items-center">
               <div className="col-md-6 mb-3 mb-md-0">
                 <div className="position-relative" style={{ height: '100%' }}>
-                  <img 
+                  <Image 
                     src="/FourthSectionBanner.jpg" 
                     className="rounded w-100" 
                     style={{ objectFit: 'cover' }} 
                     alt="Sample 1"
+                    width={100}
+                    height={100}
                   />
                 </div>
               </div>

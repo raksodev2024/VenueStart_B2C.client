@@ -1,5 +1,6 @@
 import "./Card.css"
 
+import Image from "next/image";
 import React from 'react'
 
 type CardProps = {
@@ -15,7 +16,7 @@ const Card: React.FC<CardProps> = ({ venue, imgLocation, address, subVenue, sect
     return (
       <div>
         <div className="card text-white position-relative overflow-hidden" style={{ height: "500px", borderRadius: "15px" }}>
-          <img src={imgLocation} className="w-100 h-100" style={{ objectFit: "cover" }} alt={venue}/>
+          <Image src={imgLocation} className="w-100 h-100" style={{ objectFit: "cover" }} alt={venue} width={100} height={100}/>
             <div className="card-footer text-dark">
               <div className="venue-subtitle">{venue} | {address}</div>
               <div className="venue-title">{subVenue}</div>
@@ -27,7 +28,7 @@ const Card: React.FC<CardProps> = ({ venue, imgLocation, address, subVenue, sect
   else {
     return (
       <div className="card-full card d-flex align-items-center justify-content-center" style={{ height: '150px', border: '1px solid #ccc', borderRadius: '8px', padding: '10px', backgroundColor: '#fff' }}>        
-        <img src={imgLocation} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} alt="company logo" />
+        <Image src={imgLocation} style={{ maxWidth: '100%', maxHeight: '100%', objectFit: 'contain' }} alt="company logo" width={100} height={100}/>
       </div>
 
     );

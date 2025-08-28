@@ -1,14 +1,9 @@
-// components/Navbar.tsx
-"use client";
-
 import "./NavBar.css";
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 const Navbar = () => {
-  const [open, setOpen] = useState(false);
 
   return (
     <>
@@ -54,7 +49,7 @@ const Navbar = () => {
                             </Link>
                         </li> */}
                         <li className="btn d-flex align-items-center fw-bold">
-                            <Link href="">
+                            <Link href={`${process.env.NEXT_PUBLIC_PARTNER_URL}/Account/Login`}>
                                 <i className="bis bi-plus-square"></i>&nbsp;
                                 LIST YOUR VENUE
                             </Link>
