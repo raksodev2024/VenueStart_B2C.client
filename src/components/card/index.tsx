@@ -1,4 +1,4 @@
-import "./Card.css"
+import "./index.css"
 
 import Image from "next/image"
 import React from 'react'

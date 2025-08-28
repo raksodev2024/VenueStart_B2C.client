@@ -1,4 +1,4 @@
-import "./Hero.css"
+import "./index.css"
 
 import React, { ReactNode } from 'react'
 

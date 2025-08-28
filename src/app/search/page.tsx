@@ -1,6 +1,6 @@
 import "./page.css"
 
-import Hero from "../../components/Hero/Hero";
+import Hero from "../../components/hero";
 import SearchClient from "./search-client";
 
 export default async function Page() {

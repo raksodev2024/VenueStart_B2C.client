@@ -1,6 +1,6 @@
 "use client";
 
-import "./CardSlider.css";
+import "./index.css";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -8,7 +8,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useRef, useState } from "react";
 
-import Card from "../Card/Card";
+import Card from "../card";
 
 type CardData = {
   venue?: string;
@@ -26,7 +26,7 @@ type CardsSliderProps = {
 
 const CardsSlider = ({ cards, section = "VenueStartPicks" }: CardsSliderProps) => {
   const [slidesPerView, setSlidesPerView] = useState(5);
-  const swiperRef = useRef<any>(null);
+  const swiperRef = useRef(null);
 
   useEffect(() => {
     const updateSlides = () => {

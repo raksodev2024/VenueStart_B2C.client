@@ -1,9 +1,9 @@
-import CardsSlider from "../components/CardSlider/CardSlider";
-import Hero from "../components/Hero/Hero";
+import CardsSlider from "../components/card-slider";
+import Hero from "../components/hero";
 import Image from "next/image";
 import Link from "next/link";
-import { getVenues } from "../actions/home/getVenues";
-import { getpartners } from "../actions/home/getPartners";
+import { getVenues } from "../actions/home/get-venues";
+import { getpartners } from "../actions/home/get-partners";
 import styles from "./page.module.css";
 
 export default async function Home(){
