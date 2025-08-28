@@ -1,14 +1,14 @@
 "use client";
 
 import "./CardSlider.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "swiper/css";
+import "swiper/css/pagination";
 
-import { useEffect, useRef } from "react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { useEffect, useRef, useState } from "react";
 
 import Card from "../Card/Card";
-import React from "react";
-import Slider from "react-slick";
 
 type CardData = {
   venue?: string;
@@ -16,6 +16,7 @@ type CardData = {
   address?: string;
   subVenue?: string;
   section?: "VenueStartPicks" | "OurPartners";
+  rating?: number;
 };
 
 type CardsSliderProps = {
@@ -24,30 +25,25 @@ type CardsSliderProps = {
 };
 
 const CardsSlider = ({ cards, section = "VenueStartPicks" }: CardsSliderProps) => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      { breakpoint: 992, settings: { slidesToShow: 2 } },
-      { breakpoint: 576, settings: { slidesToShow: 1 } },
-    ],
-  };
-  const sliderRef = useRef<Slider>(null);
-  useEffect(() => {
-  sliderRef.current?.slickPlay();
+  const [slidesPerView, setSlidesPerView] = useState(5);
+  const swiperRef = useRef<any>(null);
 
-  setTimeout(() => {
-    window.dispatchEvent(new Event("resize"));
-  }, 100);
-}, []);
+  useEffect(() => {
+    const updateSlides = () => {
+      const w = window.innerWidth;
+      if (w <= 480) setSlidesPerView(1);
+      else if (w <= 768) setSlidesPerView(2);
+      else if (w <= 1024) setSlidesPerView(3);
+      else setSlidesPerView(5);
+    };
+
+    updateSlides();
+    window.addEventListener("resize", updateSlides);
+    return () => window.removeEventListener("resize", updateSlides);
+  }, []);
 
   return (
-     <div className="col-md-12 mb-3" >
+    <div className="col-md-12 mb-3">
       <div className="d-flex justify-content-between align-items-center mb-3 bg-transparent">
         <div>
           {section === "VenueStartPicks" ? (
@@ -62,26 +58,37 @@ const CardsSlider = ({ cards, section = "VenueStartPicks" }: CardsSliderProps) =
             </>
           )}
         </div>
-
         {section === "VenueStartPicks" && (
-          <div className="d-flex pe-5">
-            <button className="btn btn-link text-dark p-0 me-2" onClick={() => sliderRef.current?.slickPrev()}>
-              <i className="bi bi-arrow-left-circle" style={{ fontSize: '3rem' }}></i>
+          <div className="d-flex">
+            <button className="btn btn-link text-dark p-0 me-2" onClick={() => swiperRef.current?.slidePrev()}>
+              <i className="bi bi-arrow-left-circle custom-icon"></i>
             </button>
-            <button className="btn btn-link text-dark p-0 ms-2" onClick={() => sliderRef.current?.slickNext()}>
-              <i className="bi bi-arrow-right-circle" style={{ fontSize: '3rem' }}></i>
+            <button className="btn btn-link text-dark p-0 ms-2" onClick={() => swiperRef.current?.slideNext()}>
+              <i className="bi bi-arrow-right-circle custom-icon"></i>
             </button>
           </div>
         )}
+
       </div>
 
-      <Slider ref={sliderRef} {...settings}>
-        {cards.map((card, i) => (
-          <div key={i} className="px-2" >
-            <Card venue={card.venue} imgLocation={card.imgLocation} address={card.address} subVenue={card.subVenue} section={section} />
-          </div>
-        ))}
-      </Slider>
+      <div className="cards-slider-wrapper position-relative">
+        <Swiper
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
+          modules={[Pagination, Autoplay, Navigation]}
+          slidesPerView={slidesPerView}
+          spaceBetween={10}
+          loop
+          autoplay={{ delay: 2000 }}
+          pagination={{ clickable: true, el: ".external-pagination" }}
+        >
+          {cards.map((card, i) => (
+            <SwiperSlide key={i}>
+              <Card {...card} section={section} />
+            </SwiperSlide>
+          ))}
+          <div className="external-pagination mt-4 text-center"></div>
+        </Swiper>
+      </div>
     </div>
   );
 };

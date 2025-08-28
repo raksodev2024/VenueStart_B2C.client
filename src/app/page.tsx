@@ -1,5 +1,6 @@
 import CardsSlider from "./components/CardSlider/CardSlider";
 import Hero from "./components/Hero/Hero";
+import Image from "next/image"
 import { getVenues } from "./actions/home/getVenues";
 import { getpartners } from "./actions/home/getPartners";
 import styles from "./page.module.css";
@@ -20,7 +21,7 @@ export default async function Home() {
                   </div>
                   <div className="flex-fill px-2 border-end">
                       <label className="form-label fw-bold small mb-1">Date</label>
-                      <input type="text" className="form-control border-0 p-0 shadow-none" placeholder="Select a date"></input>
+                      <input type="text" className="form-control border-0 p-0 shadow-none" placeholder="MM/DD/YYYY"></input>
                   </div>
                   <div className="flex-fill px-2">
                       <label className="form-label fw-bold small mb-1">Guests</label>
@@ -41,7 +42,7 @@ export default async function Home() {
             <CardsSlider cards={cards} section="VenueStartPicks" />
           </div>
         </div>
-        <div className="row mt-5">
+        <div className="row mt-3">
           <div className="col-md-12 mb-3">
             <CardsSlider cards={partners} section="OurPartners" />
           </div>
@@ -50,9 +51,7 @@ export default async function Home() {
           <div className={`${styles.bglightgray} container p-5`}>
             <div className="row align-items-center">
               <div className="col-md-6 mb-3 mb-md-0">
-                <div className="position-relative">
-                  <img src="/ThirdSectionBanner.jpg" className="img-fluid rounded w-100" alt="Sample 1"/>
-                </div>
+                <Image src="/ThirdSectionBanner.jpg" alt="Sample 1" width={800} height={400} className="img-fluid rounded" style={{ width: "100%", height: "auto", objectFit: "cover" }}/>
               </div>
               <div className="col-md-6 bg-white p-4">
                 <h2 className="fw-bold">The Right Venue, Right Here</h2>
@@ -69,14 +68,7 @@ export default async function Home() {
           <div className={`${styles.bglightgray} container p-5`}>
             <div className="row align-items-center">
               <div className="col-md-6 mb-3 mb-md-0">
-                <div className="position-relative" style={{ height: '100%' }}>
-                  <img 
-                    src="/FourthSectionBanner.jpg" 
-                    className="rounded w-100" 
-                    style={{ objectFit: 'cover' }} 
-                    alt="Sample 1"
-                  />
-                </div>
+                <Image src="/FourthSectionBanner.jpg" alt="Sample 1" width={800} height={400} style={{ objectFit: "cover", width: "100%", height: "auto", borderRadius: "0.25rem" }}/>
               </div>
               <div className="col-md-6 p-4">
                 <h2 className="fw-bold">Turn Space</h2>
@@ -84,7 +76,7 @@ export default async function Home() {
                 <h4>Sell your event spaces smarter.</h4>
                 <h4>All-in-one B2B platform for venue sales — built for hotels.</h4>
                 <h4>No listing fees · No lock-ins · Direct corporate leads</h4>
-                <div className="mt-3 border border-dark-subtle rounded mx-auto p-3 text-center" style={{ width: '250px' }}>LIST YOUR VENUE</div>
+                <div className="mt-3 border border-dark-subtle rounded mx-auto p-3 text-center">LIST YOUR VENUE</div>
               </div>
             </div>
           </div>
