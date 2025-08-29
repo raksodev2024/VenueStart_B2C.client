@@ -1,0 +1,22 @@
+[
+    {
+        "stepno": 1,
+        "imgLocation": "/icons/register.png",
+        "title": "For Venuestart Users",
+        "description": "Assistance for using Venuestart as a customer."
+    },
+    {
+        "stepno": 2,
+        "imgLocation": "/icons/verify.png",
+        "title": "For Venue Providers",
+        "description": "Information for listing and managing your venue."
+    },
+    {
+        "stepno": 3,
+        "imgLocation": "/icons/venueprofile.png",
+        "title": "Trust & Safety",
+        "description": "Guidelines on secure and reliable use of Venuestart."
+    }
+]
+
+

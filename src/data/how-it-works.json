@@ -1,0 +1,28 @@
+[
+    {
+        "stepno": 1,
+        "imgLocation": "/icons/register.png",
+        "title": "Submit Registration",
+        "description": "Fill out our short registration form with your company information."
+    },
+    {
+        "stepno": 2,
+        "imgLocation": "/icons/verify.png",
+        "title": "Get Verified Access",
+        "description": "Our team will review your details and issue your login credentials within 1 business day."
+    },
+    {
+        "stepno": 3,
+        "imgLocation": "/icons/venueprofile.png",
+        "title": "Build Your Venue Profile",
+        "description": "Complete your profile with a compelling description, available amenities, house rules, special packages, and upload your best photos."
+    },
+    {
+        "stepno": 4,
+        "imgLocation": "/icons/launch.png",
+        "title": "Go Live on Venuestart",
+        "description": "Once we verify your submission, your venue will go live on Venuestart within 3 business days."
+    }
+]
+
+
