@@ -20,6 +20,10 @@ const SearchClient = ({initialVenues}: SearchClientProps) => {
   useEffect(() => {
     setGeojson(initialVenues);
   }, [initialVenues]);
+  
+  useEffect(() => {
+    //
+  },[numClusters])
 
 useEffect(() => {
   const observer = new MutationObserver(() => {

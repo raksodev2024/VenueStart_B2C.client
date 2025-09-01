@@ -1,3 +1,5 @@
+"use client";
+
 import "./index.css";
 
 import React, { useState } from "react";
@@ -37,6 +39,8 @@ const Card: React.FC<CardProps> = ({
   description,
   stepno,
 }) => {
+  
+    const [isOpen, setIsOpen] = useState(false);
   if (section === "FeaturedVenues") {
     return (
       <div>
@@ -175,7 +179,6 @@ const Card: React.FC<CardProps> = ({
       </div>
     );
   } else if (section === "FAQ") {
-    const [isOpen, setIsOpen] = useState(false);
 
     return (
       <div className="card">

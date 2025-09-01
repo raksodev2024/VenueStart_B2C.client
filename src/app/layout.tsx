@@ -2,8 +2,6 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./globals.css";
 
 import {
-  Geist,
-  Geist_Mono,
   Montserrat,
   Playfair_Display,
 } from "next/font/google";
@@ -13,15 +11,6 @@ import Footer from "../components/footer";
 import type { Metadata } from "next";
 import Navbar from "../components/nav-bar";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],

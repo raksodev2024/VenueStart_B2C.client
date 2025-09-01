@@ -108,13 +108,13 @@ const CardsSlider = ({
               className="btn btn-link text-dark p-0 me-2"
               onClick={() => swiperRef.current?.slidePrev()}
             >
-              <i className="bi bi-arrow-left-circle custom-icon"></i>
+              <i className="bi bi-arrow-left-circle-fill custom-icon"></i>
             </button>
             <button
               className="btn btn-link text-dark p-0 ms-2"
               onClick={() => swiperRef.current?.slideNext()}
             >
-              <i className="bi bi-arrow-right-circle custom-icon"></i>
+              <i className="bi bi-arrow-right-circle-fill custom-icon"></i>
             </button>
           </div>
         )}

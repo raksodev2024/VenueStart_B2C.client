@@ -1,7 +1,5 @@
 import CardsSlider from "../../components/card-slider";
 import Hero from "../../components/hero";
-import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { getContact } from "../../actions/home/get-contact";
 

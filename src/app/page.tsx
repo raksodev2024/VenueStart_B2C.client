@@ -26,11 +26,13 @@ export default async function Home() {
           <div className="custom-heading" style={{ wordWrap: "normal" }}>
             <h1 className="fw-bold text-white font-serif display-5">
               Find and book the
-              <h1
-                style={{ fontFamily: "var(--font-playfair) ", color: "yellow" }}
+              <br></br>
+              <span
+                style={{ fontFamily: "var(--font-playfair) ", color: "yellow", fontSize:"3rem" }}
               >
                 perfect venue
-              </h1>
+              </span>
+              <br></br>
               for your event
             </h1>
           </div>

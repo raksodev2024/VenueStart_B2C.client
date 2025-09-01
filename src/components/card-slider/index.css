@@ -36,4 +36,8 @@
   font-size: 2.5rem;
 }
 
+.bi-arrow-left-circle-fill::before, .bi-arrow-right-circle-fill::before{
+  color: var(--primary);
+}
+
 

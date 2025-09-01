@@ -41,3 +41,8 @@ a{
   color: white;
   background-color: #00723F;
 }
+
+.bg-tertiary-color {
+    /* background: linear-gradient(90deg,rgba(0, 152, 94, 1) 0%, rgba(0, 164, 147, 1) 75%); */
+    color: var(--primary) !important;
+}
