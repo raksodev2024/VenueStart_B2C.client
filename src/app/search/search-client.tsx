@@ -5,6 +5,7 @@ import { Feature, Point } from "geojson";
 import React, {useCallback, useEffect, useState} from "react";
 
 import { ClusteredMarkers } from "../../features/map/clustered-markers";
+import Image from "next/image";
 import { InfoWindowContent } from "../../features/map/info-window-content";
 import { MarkerGeoJson } from "../../types/map/marker-feature-props";
 
@@ -62,12 +63,60 @@ useEffect(() => {
 
   return (
     <div className="container-fluid d-flex mt-5">
-        <div className="col d-flex flex-column justify-content-center align-items-center">
+        <div className="col d-flex flex-column align-items-center gap-5">
           {
             geojson? geojson.features.map((item) => (
               <div className="card col-md-12" key={item.id} id={`${item.id}`}>
-                <div className="card-body">
-                  <h4>{item.properties.name}</h4>
+                <div className="inner-search-result">
+                  <div className="row g-0 align-items-center">
+                    <div className="col-md-3">
+                      <Image 
+                        src={item.properties.venueImage}
+                        alt={item.properties.name}
+                        className="image-fluid rounded-start"
+                        objectFit="cover"
+                        width={200}
+                        height={150}
+                      />
+                    </div>
+                    <div className="col-md-6">
+                      <div className="card-body">
+                        <div className="d-flex align-items-center mb-2">
+                          <div className="me-3">
+                            <Image 
+                              src={item.properties.logo}
+                              alt={item.properties.name}
+                              className="image-fluid rounded-start"
+                              width={40}
+                              height={40}
+                            />
+                          </div>
+                          <div>
+                            <small className="mb-1 small text-muted">
+                              {item.properties.address}
+                            </small>
+                            <h3 className="card-title mb-0">{item.properties.name}</h3>
+                          </div>
+                        </div>
+                        <h5 className="card-text small">
+                          {item.properties.shortDesc}
+                        </h5>
+                        <p className="card-text small text-muted mb-0">
+                          {item.properties.rating} ⭐ ({item.properties.reviewCount} reviews)
+                        </p>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div className="row">
+                    <div className="col-md-3 mx-auto">
+                      <button className="show-more" data-bs-toggle="collapse" data-bs-target={`#${item.properties.name}`}>
+                        Show Spaces
+                      </button>
+                    </div>     
+                  </div>             
+                </div>
+                <div className="collapse px-4 pb-2 show" id={item.properties.name}>
                 </div>
               </div>
             )) : ''
@@ -77,9 +126,9 @@ useEffect(() => {
         <div id="interactiveMap" className="col">
               <APIProvider apiKey={API_KEY}>
                 <Map
-                  defaultCenter={{ lat: 14.6091, lng: 121.0223 }}
+                  defaultCenter={{ lat: 14.537646675071121, lng: 121.00039268776447 }}
                   style={{ width: "100%", height: "calc(-90px + 100vh)"}}
-                  defaultZoom={10}
+                  defaultZoom={13}
                   disableDefaultUI
                   gestureHandling="greedy"
                   styles={[

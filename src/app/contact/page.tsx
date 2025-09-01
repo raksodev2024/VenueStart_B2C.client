@@ -1,12 +1,13 @@
 import CardsSlider from "../../components/card-slider";
+import ContactClient from "./contact-client";
 import Hero from "../../components/hero";
 import React from "react";
 import { getContact } from "../../actions/home/get-contact";
 
-export default async function contact() {
+export default async function Contact() {
   const contacts = await getContact();
   return (
-    <>
+    <div className="position-relative">
       <Hero image="/ContactBanner.png" title="home">
         <div className="container p-5 h-100 d-flex flex-column justify-content-center align-items-center text-center">
           <div className="custom-heading">
@@ -34,12 +35,8 @@ export default async function contact() {
             <CardsSlider cards={contacts} section="Contact" useSlider={false} />
           </div>
         </div>
-        <div className="row mt-5">
-          <div className="col-md-12 mb-3">
-            <p className="lh-1 fw-bold mb-2 homepageTitle">Contact Us</p>
-          </div>
-        </div>
       </div>
-    </>
+      <ContactClient />
+    </div>
   );
 }

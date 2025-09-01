@@ -1,0 +1,86 @@
+[
+    {
+        "subVenueId": 1,
+        "mainVenueId": 1,
+        "subVenueName": "Grand Ballroom",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 2,
+        "mainVenueId": 1,
+        "subVenueName": "Presidential Suite",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 3,
+        "mainVenueId": 1,
+        "subVenueName": "Golden Ballroom",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 4,
+        "mainVenueId": 1,
+        "subVenueName": "Cove Manila",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 5,
+        "mainVenueId": 2,
+        "subVenueName": "Grand Ballroom",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 6,
+        "mainVenueId": 2,
+        "subVenueName": "Presidential Suite",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 7,
+        "mainVenueId": 1,
+        "subVenueName": "Golden Ballroom",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 8,
+        "mainVenueId": 1,
+        "subVenueName": "Cove Manila",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 9,
+        "mainVenueId": 3,
+        "subVenueName": "Grand Ballroom",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 10,
+        "mainVenueId": 3,
+        "subVenueName": "Presidential Suite",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 11,
+        "mainVenueId": 3,
+        "subVenueName": "Golden Ballroom",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    },
+    {
+        "subVenueId": 12,
+        "mainVenueId": 3,
+        "subVenueName": "Cove Manila",
+        "maxCapacity": 1500,
+        "pricing": 1000
+    }
+]

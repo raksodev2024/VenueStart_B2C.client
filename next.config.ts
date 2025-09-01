@@ -5,11 +5,14 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.roovook.com",
-        pathname: "/**",
-      }
+        hostname: "**",   // allow all hostnames
+      },
+      {
+        protocol: "http",
+        hostname: "**",   // allow all hostnames over http (optional)
+      },
     ],
-  }
+  },
 };
 
 export default nextConfig;

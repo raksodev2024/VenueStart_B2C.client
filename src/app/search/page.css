@@ -80,3 +80,16 @@
   margin-top: 6px;
   height: 30px;
 }
+
+.inner-search-result {
+    border-radius: 1rem;
+    border: solid transparent;
+    padding: 0.5rem;
+}
+
+.show-more{
+  background-color: transparent;
+  color: var(--primary);
+  font-weight: bold;
+  border:none;
+}

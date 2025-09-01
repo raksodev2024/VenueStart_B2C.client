@@ -10,7 +10,6 @@ const Navbar = () => {
         <div className="container">
           <Link className="navbar-brand" href="/">
             <Image
-              // className={styles.logo}
               src="/logo.png"
               alt="Next.js logo"
               width={100}
@@ -32,27 +31,8 @@ const Navbar = () => {
 
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto d-flex gap-2">
-              {/* <li className="nav-item">
-                            <Link className={`nav-link`} href="#">
-                                Location
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className={`nav-link`} href="#p">
-                                About
-                            </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className={`nav-link`} href="/contact">
-                                Contact
-                            </Link>
-                        </li> */}
               <li className="btn d-flex align-items-center fw-bold">
-                {/* <Link href={`${process.env.NEXT_PUBLIC_PARTNER_URL}/Account/Login`}>
-                                <i className="bis bi-plus-square"></i>&nbsp;
-                                LIST YOUR VENUE
-                            </Link> */}
-                <Link href={"/listYourVenue"}>
+                <Link href={"/list-your-venue"}>
                   <i className="bis bi-plus-square"></i>&nbsp; LIST YOUR VENUE
                 </Link>
               </li>

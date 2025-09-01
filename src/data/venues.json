@@ -1,0 +1,41 @@
+[
+    {
+        "venueName": "Okada Manila",
+        "venueId": 1,
+        "shortDesc": "Entertainment City, New Seaside Dr, Paranaque City, 1701 Metro Manila",
+        "address": "Paranaque City, Metro Manila, Philippines",
+        "gpsLat": "14.515197572303887",
+        "gpsLng": "120.98151098257634",
+        "rating": 5.0,
+        "reviewCount": 100,
+        "subVenueCount": 5,
+        "logoUrl": "https://image4.owler.com/logo/okada-manila_owler_20211015_140947_original.png",
+        "venueImageUrl":"https://i.ytimg.com/vi/ZEvFOy_BPUA/maxresdefault.jpg"
+    },
+    {
+        "venueName": "Seda Residences Makati",
+        "venueId": 2,
+        "shortDesc": "Ayala Avenue corner Amorsolo, Salcedo, Legazpi Village, Makati City, 1229 Metro Manila",
+        "address": "Makati City, Metro Manila, Philippines",
+        "gpsLat": "14.559961965326217",
+        "gpsLng": "121.01532345507643",
+        "rating": 5.0,
+        "reviewCount": 100,
+        "subVenueCount": 3,
+        "logoUrl": "https://seekvectorlogo.com/wp-content/uploads/2023/03/seda-hotels-vector-logo-small.png",
+        "venueImageUrl": "https://images.trvl-media.com/lodging/6000000/5950000/5943300/5943256/c8925e1d.jpg?impolicy=resizecrop&rw=575&rh=575&ra=fill" 
+    },
+    {
+        "venueName": "Makati Shangri-La",
+        "venueId": 3,
+        "shortDesc": "Ayala Avenue corner Makati Avenue, Makati, Manila, Metro Manila, Philippines, 1200",
+        "address": "Makati City, Metro Manila, Philippines",
+        "gpsLat": "14.553785820894054",
+        "gpsLng": "121.02471720626605",
+        "rating": 5.0,
+        "reviewCount": 100,
+        "subVenueCount": 4,
+        "logoUrl": "https://seekvectorlogo.com/wp-content/uploads/2023/03/seda-hotels-vector-logo-small.png",
+        "venueImageUrl": "https://www.shangri-la.com/-/media/Shangri-La/manila_makatishangrila/settings/about/2024_SLM_YourShangriLaStory_AboutOverview_Banner.jpg"
+    }
+]

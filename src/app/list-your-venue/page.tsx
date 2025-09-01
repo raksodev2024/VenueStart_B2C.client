@@ -151,13 +151,14 @@ export default async function listYourVenue() {
                       Busy or unsure how to begin? Let us help you onboard and
                       complete your venue listing.
                     </p>
-                    <form className="d-flex flex-column align-items-center ">
+                    <form className="d-flex flex-column align-items-center " autoComplete="off">
                       <div className="form-floating mb-3 col-md-12">
                         <input
                           type="text"
                           className="form-control"
                           id="name"
                           placeholder="Enter Name"
+                          autoComplete="off"
                         />
                         <label htmlFor="name">Name</label>
                       </div>
@@ -167,6 +168,7 @@ export default async function listYourVenue() {
                           className="form-control"
                           id="email"
                           placeholder="Enter Email"
+                          autoComplete="off"
                         />
                         <label htmlFor="email">Email address</label>
                       </div>
@@ -176,6 +178,7 @@ export default async function listYourVenue() {
                           className="form-control"
                           id="venue"
                           placeholder="Venue Name"
+                          autoComplete="off"
                         />
                         <label htmlFor="venue">Venue Name</label>
                       </div>
@@ -185,6 +188,7 @@ export default async function listYourVenue() {
                           placeholder="Your message"
                           id="message"
                           style={{ height: "100%" }}
+                          autoComplete="off"
                         ></textarea>
                         <label htmlFor="message">Message</label>
                       </div>
