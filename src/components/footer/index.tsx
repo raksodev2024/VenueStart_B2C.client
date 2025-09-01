@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-light text-dark px-5 py-4 mt-auto">
       <div className="container">
-        <div className="row align-items-center">
+        <div className="d-flex align-items-center justify-content-between">
           <div className="col-md-3 text-center text-md-start mb-3 mb-md-0">
             <Link className="navbar-brand" href="/">
               <Image
@@ -37,7 +37,7 @@ const Footer: React.FC = () => {
               <Link href="/why" className="text-dark text-decoration-none">Why VenueStart</Link> |
               <Link href="/list" className="text-dark text-decoration-none">List your Venue</Link> <br/>
             </div>
-            <div className="d-flex flex-wrap gap-3">
+            <div className="d-flex flex-wrap gap-3 justify-content-end">
               <Link href="https://facebook.com" target="_blank" className="text-dark">
                 <FaFacebook />
               </Link>

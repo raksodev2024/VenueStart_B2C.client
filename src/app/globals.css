@@ -26,23 +26,21 @@ a{
 .btn-outline-custom {
     color: #00723F;
     border-color: #00723F;
-    font-size: 12px;
 }
 .btn-custom {
-    color: white;
-    border-color: #00723F;
-    font-size: 12px;
-    background-color: #00723F;
+    color: #fff !important;
+    border-color: var(--primary);
+    background-color: var(--primary);
     border-radius: 10px;
+}
+
+.btn-custom:hover{
+  color: var(--primary) !important;
+  border-color: var(--primary) !important;
 }
 
 .bg-global
 {
   color: white;
   background-color: #00723F;
-}
-
-.bg-tertiary-color {
-    /* background: linear-gradient(90deg,rgba(0, 152, 94, 1) 0%, rgba(0, 164, 147, 1) 75%); */
-    color: var(--primary) !important;
 }

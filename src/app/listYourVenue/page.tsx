@@ -63,28 +63,28 @@ export default async function listYourVenue() {
           </div>
         </div>
         <div className="row mt-3">
-          <p className="lh-1 fw-bold mb-2 homepageTitle">
+          <p className="fw-bold mb-2 homepageTitle">
             List your venue and let Venuestart handle the sales.
           </p>
-          <p className="lh-1">Optimized Sales system for faster conversions</p>
+          <p className="">Optimized Sales system for faster conversions</p>
           <div className={`container`}>
             <div className="row align-items-center">
               <div className="col-md-6 p-4">
                 <h2 className="fw-bold">🔧 Streamlined EMS Workflow</h2>
-                <h4>
+                <p>
                   Our platform is built for efficiency. Manage all steps — from
                   inquiry and quotation to billing, feedback, and booking
                   history — in one dashboard. No more back-and-forth emails or
                   scattered Excel files.
-                </h4>
+                </p>
                 <h2 className="fw-bold">
                   📊 Branded Documents, White-Labeled for You
                 </h2>
-                <h4>
+                <p>
                   All client-facing documents such as quotations, vouchers, and
                   invoices are sent automatically with your hotel’s logo and
                   identity
-                </h4>
+                </p>
               </div>
               <div className="col-md-6 mb-3 mb-md-0">
                 <Image
@@ -110,18 +110,18 @@ export default async function listYourVenue() {
                 <h2 className="fw-bold">
                   🚀 The Quicker You Quote, the More You Win
                 </h2>
-                <h4>
+                <p>
                   Speed is a competitive edge in venue sales. Venuestart reduces
                   response time with intelligent tools and coordinator support
                   so you can quote faster, impress clients, and secure more
                   confirmed bookings even during peak season.
-                </h4>
+                </p>
                 <h2 className="fw-bold">🔗 Cross-Channel Promotion</h2>
-                <h4>
+                <p>
                   Once listed, your venue detail page can be linked from your
                   website, social media, or email campaigns — allowing you to
                   send clients directly to an optimized inquiry form.
-                </h4>
+                </p>
               </div>
             </div>
           </div>
@@ -144,15 +144,15 @@ export default async function listYourVenue() {
               <div className="col-md-6 mb-3 mb-md-0 d-flex">
                 <div className="card shadow-sm flex-fill d-flex flex-column">
                   <div className="card-body p-5 d-flex flex-column">
-                    <h4 className="card-title mb-4 text-center">
+                    <h4 className="card-title mb-4 text-center fw-bold">
                       Need help getting started?
                     </h4>
-                    <h5 className="mb-4">
+                    <p className="mb-4">
                       Busy or unsure how to begin? Let us help you onboard and
                       complete your venue listing.
-                    </h5>
-                    <form className="d-flex flex-column flex-grow-1">
-                      <div className="form-floating mb-3">
+                    </p>
+                    <form className="d-flex flex-column align-items-center ">
+                      <div className="form-floating mb-3 col-md-12">
                         <input
                           type="text"
                           className="form-control"
@@ -161,7 +161,7 @@ export default async function listYourVenue() {
                         />
                         <label htmlFor="name">Name</label>
                       </div>
-                      <div className="form-floating mb-3">
+                      <div className="form-floating mb-3 col-md-12">
                         <input
                           type="email"
                           className="form-control"
@@ -170,7 +170,7 @@ export default async function listYourVenue() {
                         />
                         <label htmlFor="email">Email address</label>
                       </div>
-                      <div className="form-floating mb-3">
+                      <div className="form-floating mb-3 col-md-12">
                         <input
                           type="text"
                           className="form-control"
@@ -179,7 +179,7 @@ export default async function listYourVenue() {
                         />
                         <label htmlFor="venue">Venue Name</label>
                       </div>
-                      <div className="form-floating mb-3 flex-grow-1">
+                      <div className="form-floating mb-3 flex-grow-1 col-md-12">
                         <textarea
                           className="form-control"
                           placeholder="Your message"
@@ -190,7 +190,7 @@ export default async function listYourVenue() {
                       </div>
                       <button
                         type="submit"
-                        className="btn btn-custom w-100 mt-auto"
+                        className="btn btn-custom w-50 mt-auto fw-bold"
                       >
                         Send Message
                       </button>
@@ -199,13 +199,13 @@ export default async function listYourVenue() {
                 </div>
               </div>
               <div className="col-md-6 d-flex ">
-                <div className="card shadow-sm flex-fill d-flex align-items-center">
-                  <div className="card-body p-4 text-center ">
-                    <h4 className="card-title mb-4">
+                <div className="card shadow-sm flex-fill ">
+                  <div className="card-body p-4 d-flex flex-column justify-content-center align-items-center">
+                    <h4 className="card-title fw-bold">
                       Listing your space takes just 5 minutes.
                     </h4>
-                    <h5>Start now.</h5>
-                    <button type="submit" className="btn btn-custom w-100 mt-3">
+                    <p>Start now.</p>
+                    <button type="submit" className="btn btn-custom w-50 mt-3 fw-bold">
                       Start Listing
                     </button>
                   </div>
