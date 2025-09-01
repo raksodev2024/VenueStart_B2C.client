@@ -1,0 +1,16 @@
+.notfoundwrapper {
+  min-height: calc(100vh - 210px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.notfoundtitle {
+  font-size: 10rem;
+  background: -webkit-linear-gradient(#50f1a9, #319777);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;  
+  background-clip: text; 
+  -webkit-text-fill-color: transparent;
+}
