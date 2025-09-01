@@ -4,6 +4,7 @@ import Supercluster, {ClusterProperties} from 'supercluster';
 
 import { FeatureMarker } from './feature-marker';
 import { FeaturesClusterMarker } from './feature-cluster-marker';
+import Link from 'next/link';
 import { useSupercluster } from '../../hooks/use-supercluster';
 
 type ClusteredMarkersProps = {
@@ -60,7 +61,6 @@ export const ClusteredMarkers = ({
   return (
     <>
       {clusters.map(feature => {
-        console.log(feature.geometry)
         const [lng, lat] = feature.geometry.coordinates;
 
         const clusterProperties = feature.properties as ClusterProperties;
@@ -76,12 +76,15 @@ export const ClusteredMarkers = ({
             onMarkerClick={handleClusterClick}
           />
         ) : (
-          <FeatureMarker
+          <Link 
+            key={feature.id} href={`#${feature.id}`}>
+            <FeatureMarker
             key={feature.id}
             featureId={feature.id as string}
             position={{lat, lng}}
             onMarkerClick={handleMarkerClick}
           />
+          </Link>
         );
       })}
     </>

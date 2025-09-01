@@ -5,7 +5,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "cdn.roovook.com", // 👈 replace with your actual domain
+        hostname: "cdn.roovook.com",
         pathname: "/**",
       }
     ],

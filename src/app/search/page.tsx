@@ -6,7 +6,7 @@ import SearchClient from "./search-client";
 import { v4 as uuidv4 } from "uuid";
 
 export default async function Page() {
-  const res = await fetch("https://localhost:7171/Venue/Search", {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_SERVER_URL}/Venue/Search`, {
     cache: "no-store" // like SSR
   });
   
@@ -19,7 +19,7 @@ export default async function Page() {
       id: uuidv4(),
       geometry: {
         type: "Point",
-        coordinates: [Number(h.gpsLng), Number(h.gpsLat)], // GeoJSON requires [lon, lat]
+        coordinates: [Number(h.gpsLng), Number(h.gpsLat)],
       },
       properties: {
         name: h.hotelName,

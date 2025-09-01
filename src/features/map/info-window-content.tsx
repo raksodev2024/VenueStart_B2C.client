@@ -13,7 +13,6 @@ export const InfoWindowContent = memo(function InfoWindowContent({ features }: I
   if (features.length === 1) {
     const f = features[0];
     const props = f.properties! as MarkerFeatureProps;
-    console.log(props);
     return (
       <div>
         <h4>{props.name}</h4>
@@ -36,8 +35,7 @@ export const InfoWindowContent = memo(function InfoWindowContent({ features }: I
 
           return (
             <li key={feature.id}>
-              
-        <h4>{props.name}</h4>
+                <h4>{props.name}</h4>
             </li>
           );
         })}
