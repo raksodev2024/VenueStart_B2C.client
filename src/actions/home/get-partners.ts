@@ -1,7 +1,7 @@
 "use server";
 
-import partners from "../../data/partners.json";
+import data from "../../data/partners.json";
 
-export async function getpartners() {
-  return partners;
+export async function getPartners() {
+  return data;
 }

@@ -1,0 +1,34 @@
+[
+    {
+        "stepno": 1,
+        "imgLocation": "/icons/searchvenue.png",
+        "title": "Search Venues",
+        "description": "Browse venues, category, quotation"
+    },
+    {
+        "stepno": 2,
+        "imgLocation": "/icons/requestquote.png",
+        "title": "Request a Quote",
+        "description": "Fill out the booking request form"
+    },
+    {
+        "stepno": 3,
+        "imgLocation": "/icons/confirmation.png",
+        "title": "Confirmed Booking",
+        "description": "Make an initial payment"
+    },
+    {
+        "stepno": 4,
+        "imgLocation": "/icons/hand-shake.png",
+        "title": "Site Inspection & Planning",
+        "description": "Schedule a visit and get support"
+    },
+    {
+        "stepno": 5,
+        "imgLocation": "/icons/credit-card.png",
+        "title": "Final Payment",
+        "description": "Pay the remaining balance"
+    }
+]
+
+

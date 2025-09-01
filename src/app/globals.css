@@ -14,7 +14,7 @@
   margin: 0;
   font-size: 16px;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--font-montserrat);
 }
 
 a{
@@ -27,4 +27,17 @@ a{
     color: #00723F;
     border-color: #00723F;
     font-size: 12px;
+}
+.btn-custom {
+    color: white;
+    border-color: #00723F;
+    font-size: 12px;
+    background-color: #00723F;
+    border-radius: 10px;
+}
+
+.bg-global
+{
+  color: white;
+  background-color: #00723F;
 }
